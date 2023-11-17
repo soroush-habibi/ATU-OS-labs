@@ -1,0 +1,3 @@
+
+In a Unix-like file system, an inode (index node) is a data structure that stores information about a file or a directory. Each file or directory is identified by a unique inode number within the file system. The inode contains metadata about the file or directory, such as its size, permissions, timestamps, and pointers to the data blocks where the actual content is stored on disk.
+The inode numbers of /proc, /dev, and /sys being set to 1 is a convention. These virtual file systems are created dynamically at runtime and don't have traditional disk-based inodes. Using inode number 1 for them is a way to quickly identify and differentiate them from regular files and directories.
